@@ -39,6 +39,7 @@ class ValidityTester(object):
         try:
             async with aiohttp.ClientSession() as session:
                 try:
+
                     if isinstance(proxy, bytes):
                         proxy = proxy.decode('utf-8')
                     real_proxy = 'http://' + proxy
@@ -49,7 +50,7 @@ class ValidityTester(object):
                             print('Valid proxy', proxy)
                 except (ProxyConnectionError, TimeoutError, ValueError):
                     print('Invalid proxy', proxy)
-        except (ServerDisconnectedError, ClientResponseError,ClientConnectorError) as s:
+        except (ServerDisconnectedError, ClientResponseError, ClientConnectorError) as s:
             print(s)
             pass
 

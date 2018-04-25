@@ -16,11 +16,11 @@ get_proxy_timeout = 10
 
 # 代理池数量界限
 POOL_LOWER_THRESHOLD = 20
-POOL_UPPER_THRESHOLD = 100
+POOL_UPPER_THRESHOLD = 60
 
 # 检查周期
 VALID_CHECK_CYCLE = 60
 POOL_LEN_CHECK_CYCLE = 20
 
 # 测试api
-TEST_API = 'http://www.baidu.com'
+TEST_API = 'https://www.baidu.com'
