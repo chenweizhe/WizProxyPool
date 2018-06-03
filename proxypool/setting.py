@@ -9,7 +9,7 @@
 # Redis数据库的地址和接口
 HOST = 'localhost'
 PORT = 6379
-PASSWORD = '123456'
+PASSWORD = 'xxxxxx'
 
 # 获得代理测试时间界限
 get_proxy_timeout = 10
